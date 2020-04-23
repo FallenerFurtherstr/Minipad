@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Multimenu</class>
+ <widget class="QMainWindow" name="Multimenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>482</width>
+    <height>363</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Multimenu</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>482</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile_F">
+    <property name="title">
+     <string>File(&amp;F)</string>
+    </property>
+    <addaction name="actionNew_N"/>
+    <addaction name="actionOpen_O"/>
+    <addaction name="actionClose_C"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave_S"/>
+    <addaction name="actionSave_as"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit_E"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit(&amp;E)</string>
+    </property>
+    <addaction name="actionUndo"/>
+    <addaction name="separator"/>
+    <addaction name="actionCut"/>
+    <addaction name="actionCopy"/>
+    <addaction name="actionPaste"/>
+    <addaction name="separator"/>
+    <addaction name="actionFind_F"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help(&amp;H)</string>
+    </property>
+    <addaction name="actionVersion"/>
+    <addaction name="actionDocument_D"/>
+   </widget>
+   <addaction name="menuFile_F"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew_N"/>
+   <addaction name="actionSave_S"/>
+   <addaction name="actionOpen_O"/>
+   <addaction name="actionUndo"/>
+   <addaction name="actionCopy"/>
+   <addaction name="actionPaste"/>
+   <addaction name="actionFind_F"/>
+  </widget>
+  <action name="actionNew_N">
+   <property name="icon">
+    <iconset resource="menucg.qrc">
+     <normaloff>:/File/images/新建.png</normaloff>:/File/images/新建.png</iconset>
+   </property>
+   <property name="text">
+    <string>New(&amp;N)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionOpen_O">
+   <property name="icon">
+    <iconset resource="menucg.qrc">
+     <normaloff>:/File/images/打开.png</normaloff>:/File/images/打开.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open(&amp;O)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionClose_C">
+   <property name="icon">
+    <iconset resource="menucg.qrc">
+     <normaloff>:/File/images/关闭.png</normaloff>:/File/images/关闭.png</iconset>
+   </property>
+   <property name="text">
+    <string>Close(&amp;C)</string>
+   </property>
+  </action>
+  <action name="actionSave_S">
+   <property name="icon">
+    <iconset resource="menucg.qrc">
+     <normaloff>:/File/images/保存.png</normaloff>:/File/images/保存.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save(&amp;S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="icon">
+    <iconset resource="menucg.qrc">
+     <normaloff>:/File/images/另存为.png</normaloff>:/File/images/另存为.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save as...(&amp;A)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionExit_E">
+   <property name="icon">
+    <iconset resource="menucg.qrc">
+     <normaloff>:/File/images/退出.png</normaloff>:/File/images/退出.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit(&amp;E)</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset resource="menucg.qrc">
+     <normaloff>:/File/images/撤销;.png</normaloff>:/File/images/撤销;.png</iconset>
+   </property>
+   <property name="text">
+    <string>Undo(&amp;Z)</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="menucg.qrc">
+     <normaloff>:/File/images/复制.png</normaloff>:/File/images/复制.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy(&amp;C)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="icon">
+    <iconset resource="menucg.qrc">
+     <normaloff>:/File/images/粘贴.png</normaloff>:/File/images/粘贴.png</iconset>
+   </property>
+   <property name="text">
+    <string>Patse(&amp;V)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionVersion">
+   <property name="text">
+    <string>Version</string>
+   </property>
+   <property name="shortcut">
+    <string>F9</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="icon">
+    <iconset resource="menucg.qrc">
+     <normaloff>:/File/images/剪切.png</normaloff>:/File/images/剪切.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cut(&amp;X)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionFind_F">
+   <property name="icon">
+    <iconset resource="menucg.qrc">
+     <normaloff>:/File/images/查找.png</normaloff>:/File/images/查找.png</iconset>
+   </property>
+   <property name="text">
+    <string>Find(&amp;F)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionDocument_D">
+   <property name="icon">
+    <iconset resource="menucg.qrc">
+     <normaloff>:/File/images/帮助.png</normaloff>:/File/images/帮助.png</iconset>
+   </property>
+   <property name="text">
+    <string>Document(&amp;D)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="menucg.qrc"/>
+ </resources>
+ <connections/>
+</ui>
